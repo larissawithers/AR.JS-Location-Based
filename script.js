@@ -67,13 +67,10 @@ window.onload = () => {
   
     places.forEach((place) => {
         let latitude = place.location.lat;
-        let longitude = place.location.lng;
-
-        const distanceMsg = document.querySelector('[gps-entity-place]').getAttribute('distanceMsg');
-        console.log(distanceMsg);   
+        let longitude = place.location.lng;  
   
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}; position="0 -0.5 0"`);
+        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};, position="0 -0.5 0"`);
   
         setModel(models[modelIndex], model);
   
