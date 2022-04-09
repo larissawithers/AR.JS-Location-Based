@@ -18,6 +18,7 @@ window.onload = () => {
     ];
   }
   
+  
   var models = [
     {
         url: './assets/magnemite/scene.gltf',
@@ -68,6 +69,9 @@ window.onload = () => {
     places.forEach((place) => {
         let latitude = place.location.lat;
         let longitude = place.location.lng;
+
+        const distanceMsg = document.querySelector('[gps-entity-place]').getAttribute('distanceMsg');
+        console.log(distanceMsg);   
   
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
