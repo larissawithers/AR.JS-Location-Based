@@ -11,8 +11,8 @@ window.onload = () => {
         {
             name: 'Pokèmon',
             location: {
-                lat: 44.62654097441639,
-                lng: -75.94678662964142,
+                lat: 44.62656277395706,
+                lng: -75.94677534112604,
             },
         },
     ];
@@ -25,21 +25,18 @@ window.onload = () => {
         scale: '0.5 0.5 0.5',
         info: 'Magnemite, Lv. 5, HP 10/10',
         rotation: '0 180 0',
-        position: '15',
     },
     {
         url: './assets/articuno/scene.gltf',
         scale: '0.2 0.2 0.2',
         rotation: '0 180 0',
         info: 'Articuno, Lv. 80, HP 100/100',
-        position: '10',
     },
     {
         url: './assets/dragonite/scene.gltf',
         scale: '0.08 0.08 0.08',
         rotation: '0 180 0',
         info: 'Dragonite, Lv. 99, HP 150/150',
-        position: '5',
     },
   ];
   
