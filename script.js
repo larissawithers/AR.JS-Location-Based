@@ -74,7 +74,7 @@ window.onload = () => {
         console.log(distanceMsg);   
   
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}; position="0 -0.5 0"`);
   
         setModel(models[modelIndex], model);
   
