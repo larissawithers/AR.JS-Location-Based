@@ -55,6 +55,8 @@ window.onload = () => {
     }
   
     entity.setAttribute('gltf-model', model.url);
+
+    model.setAttribute('animation-mixer', '');
   
     const div = document.querySelector('.instructions');
     div.innerText = model.info;
