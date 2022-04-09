@@ -24,18 +24,21 @@ window.onload = () => {
         scale: '0.5 0.5 0.5',
         info: 'Magnemite, Lv. 5, HP 10/10',
         rotation: '0 180 0',
+        position: '2',
     },
     {
         url: './assets/articuno/scene.gltf',
         scale: '0.2 0.2 0.2',
         rotation: '0 180 0',
         info: 'Articuno, Lv. 80, HP 100/100',
+        position: '2',
     },
     {
         url: './assets/dragonite/scene.gltf',
         scale: '0.08 0.08 0.08',
         rotation: '0 180 0',
         info: 'Dragonite, Lv. 99, HP 150/150',
+        position: '2',
     },
   ];
   
@@ -70,8 +73,6 @@ window.onload = () => {
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
   
         setModel(models[modelIndex], model);
-  
-        model.setAttribute('animation-mixer', '');
   
         document.querySelector('button[data-action="change"]').addEventListener('click', function () {
             var entity = document.querySelector('[gps-entity-place]');
